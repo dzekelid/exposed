@@ -9,11 +9,37 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe
 x-kinRank: "10"
 x-alexaRank: "1914"
 tags: Exposed
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/exposed/master/_listings/stripe/apis.md
 specificationVersion: "0.14"
 apis:
+- name: Stripe - Delete Customers Customer Subscriptions Subscription Exposed
+  x-api-slug: customerscustomersubscriptionssubscription-exposed-id-delete
+  description: Cancels a customer???s subscription. If you set the at_period_end parameter
+    to true, the subscription will remain active until the end of the period, at which
+    point it will be canceled and not renewed. By default, the subscription is terminated
+    immediately. In either case, the customer will not be charged again for the subscription.
+    Note, however, that any pending invoice items that you???ve created will still
+    be charged for at the end of the period unless manually deleted. If you???ve set
+    the subscription to cancel at period end, any pending prorations will also be
+    left in place and collected at the end of the period, but if the subscription
+    is set to cancel immediately, pending prorations will be removed.By default, all
+    unpaid invoices for the customer will be closed upon subscription cancellation.
+    We do this in order to prevent unexpected payment attempts once the customer has
+    canceled a subscription. However, you can reopen the invoices manually after subscription
+    cancellation to have us proceed with payment collection, or you could even re-attempt
+    payment yourself on all unpaid invoices before allowing the customer to cancel
+    the subscription at all.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
+  humanURL: https://stripe.com/
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/exposed/master/_listings/stripe/customerscustomersubscriptionssubscription-exposed-id-delete-openapi.md
 - name: Stripe - Get Customers Customer Subscriptions Subscription Exposed
   x-api-slug: customerscustomersubscriptionssubscription-exposed-id-get
   description: Get Customers, Customer, Subscriptions, Subscription, Exposed
@@ -28,6 +54,34 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/exposed/master/_listings/stripe/customerscustomersubscriptionssubscription-exposed-id-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/exposed/master/_listings/stripe/customerscustomersubscriptionssubscription-exposed-id-get-openapi.md
+- name: Stripe - Add Customers Customer Subscriptions Subscription Exposed
+  x-api-slug: customerscustomersubscriptionssubscription-exposed-id-post
+  description: Updates an existing subscription on a customer to match the specified
+    parameters. When changing plans or quantities, we will optionally prorate the
+    price we charge next month to make up for any price changes. To preview how the
+    proration will be calculated, use the upcoming invoice endpoint.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
+  humanURL: https://stripe.com/
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/exposed/master/_listings/stripe/customerscustomersubscriptionssubscription-exposed-id-post-openapi.md
+- name: Stripe - Delete Customers Customer Subscriptions Subscription Exposed  Discount
+  x-api-slug: customerscustomersubscriptionssubscription-exposed-iddiscount-delete
+  description: Delete Customers, Customer, Subscriptions, Subscription, Exposed, ,
+    Discount
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
+  humanURL: https://stripe.com/
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/exposed/master/_listings/stripe/customerscustomersubscriptionssubscription-exposed-iddiscount-delete-openapi.md
 - name: Stripe - Get Customers Customer Subscriptions Subscription Exposed  Discount
   x-api-slug: customerscustomersubscriptionssubscription-exposed-iddiscount-get
   description: Get Customers, Customer, Subscriptions, Subscription, Exposed, , Discount
@@ -42,6 +96,71 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/exposed/master/_listings/stripe/customerscustomersubscriptionssubscription-exposed-iddiscount-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/exposed/master/_listings/stripe/customerscustomersubscriptionssubscription-exposed-iddiscount-get-openapi.md
+- name: Stripe - Delete Subscriptions Subscription Exposed
+  x-api-slug: subscriptionssubscription-exposed-id-delete
+  description: Cancels a customer???s subscription. If you set the at_period_end parameter
+    to true, the subscription will remain active until the end of the period, at which
+    point it will be canceled and not renewed. By default, the subscription is terminated
+    immediately. In either case, the customer will not be charged again for the subscription.
+    Note, however, that any pending invoice items that you???ve created will still
+    be charged for at the end of the period unless manually deleted. If you???ve set
+    the subscription to cancel at period end, any pending prorations will also be
+    left in place and collected at the end of the period, but if the subscription
+    is set to cancel immediately, pending prorations will be removed.By default, all
+    unpaid invoices for the customer will be closed upon subscription cancellation.
+    We do this in order to prevent unexpected payment attempts once the customer has
+    canceled a subscription. However, you can reopen the invoices manually after subscription
+    cancellation to have us proceed with payment collection, or you could even re-attempt
+    payment yourself on all unpaid invoices before allowing the customer to cancel
+    the subscription at all.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
+  humanURL: https://stripe.com/
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/exposed/master/_listings/stripe/subscriptionssubscription-exposed-id-delete-openapi.md
+- name: Stripe - Get Subscriptions Subscription Exposed
+  x-api-slug: subscriptionssubscription-exposed-id-get
+  description: Retrieves the subscription with the given ID.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
+  humanURL: https://stripe.com/
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/exposed/master/_listings/stripe/subscriptionssubscription-exposed-id-get-openapi.md
+- name: Stripe - Add Subscriptions Subscription Exposed
+  x-api-slug: subscriptionssubscription-exposed-id-post
+  description: Updates an existing subscription on a customer to match the specified
+    parameters. When changing plans or quantities, we will optionally prorate the
+    price we charge next month to make up for any price changes. To preview how the
+    proration will be calculated, use the upcoming invoice endpoint.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
+  humanURL: https://stripe.com/
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/exposed/master/_listings/stripe/subscriptionssubscription-exposed-id-post-openapi.md
+- name: Stripe - Delete Subscriptions Subscription Exposed  Discount
+  x-api-slug: subscriptionssubscription-exposed-iddiscount-delete
+  description: Delete Subscriptions, Subscription, Exposed, , Discount
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
+  humanURL: https://stripe.com/
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/exposed/master/_listings/stripe/subscriptionssubscription-exposed-iddiscount-delete-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://stride.api.gallery.streamdata.io
